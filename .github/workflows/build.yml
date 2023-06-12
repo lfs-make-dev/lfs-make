@@ -1,0 +1,31 @@
+# Configuration file for GitHub Actions
+
+name: Build
+
+on:
+  push:
+    branches:
+      - [Branch name]
+  pull_request:
+    branches:
+      - [Branch name]
+
+jobs:
+  build:
+    runs-on: [Operating system]
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set Up Environment
+        [Set up the environment required for the build]
+
+      - name: Build
+        run: [Build command]
+
+      - name: Test
+        run: [Test command]
+
+# Add any additional steps or configuration needed for your project.
+
